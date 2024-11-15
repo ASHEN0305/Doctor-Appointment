@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+    font-family: Outfit;
+}
+
+/* this is for underline of home,contact etc change in active time*/
+.active hr{
+    @apply block
+}
+
+/* this is for hidding scroll bar*/
+::-webkit-scrollbar{
+    @apply hidden
+}
+
+@media (max-width:740px) {
+    .active p{
+        @apply text-white bg-primary
+    }
+}
